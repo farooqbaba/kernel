@@ -1,0 +1,20 @@
+#
+#This software is contributed or developed by KYOCERA Corporation.
+#(C) 2013 KYOCERA Corporation
+#
+
+menu "MHL Device Drivers"
+
+config EP957B_MHL
+	tristate "CONFIG_EP957B_MHL"
+	depends on I2C && GPIOLIB
+	default y
+	help 
+		Support for Explore MHL driver
+
+config EP957B_MHL_A
+	tristate "CONFIG_EP957B_MHL_A"
+	depends on I2C && GPIOLIB
+	default y
+
+endmenu
